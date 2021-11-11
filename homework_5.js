@@ -150,3 +150,24 @@ function except(array, excluded) {
 
 console.log(arr);
 console.log(except(arr, [3]));
+
+
+
+
+
+
+// task 6
+
+const arr = [1,10,2,3,4,6];
+
+function getMax(numbers) {
+    let num = 0;
+    for (let elem of numbers) {
+        if (elem > num) {
+            num = elem;
+        }
+    }
+    return num
+};
+
+console.log(getMax(arr));
