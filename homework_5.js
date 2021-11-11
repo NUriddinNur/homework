@@ -84,4 +84,28 @@ function checkPhoneKod(num) {
 const Ali = createUser("Ali", "Valiev", "admin", "+998989091122", "admin@gmail.com", "11223344");
 console.log(Ali);
 
+// task 2  +
+
+const arr = [2, 3, 2, 5, 7, 6, 8, 9, 55, 66, 4, 6, 66]
+
+function getMaxMinNumber(arr) {
+    let minNum = arr[0];
+    let maxNum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        if (maxNum < arr[i]) {
+            maxNum = arr[i];
+        }
+        if (minNum > arr[i]) {
+            minNum = arr[i]
+        }
+    } 
+
+    return {
+        maxNum,
+        minNum
+    }
+}
+
+console.log(getMaxMinNumber(arr));
 
