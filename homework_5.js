@@ -109,3 +109,17 @@ function getMaxMinNumber(arr) {
 
 console.log(getMaxMinNumber(arr));
 
+// task 3 +
+
+const arr = [1, 2, 3, 6, 5, 8, 4, 9, 2, 0, 1, 6];
+
+function checkNumberInArray(arr, n) {
+    for (let elem of arr) {
+        if (elem === n) {
+            return true;
+        }
+    }
+    return false
+}
+
+console.log(checkNumberInArray(arr, 6));
