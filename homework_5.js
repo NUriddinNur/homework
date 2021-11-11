@@ -123,3 +123,30 @@ function checkNumberInArray(arr, n) {
 }
 
 console.log(checkNumberInArray(arr, 6));
+
+//task 4 
+
+const arr = [2, 3, 4, 1, 5, 2, 6, 4];
+
+function except(array, excluded) {
+    let end = 0;
+    let startIndex = excluded[0];
+    if (excluded.length === 1) {
+        end = array.length - 1;
+        console.log(end);
+    }else {
+        end = excluded[1];
+        console.log(end);
+    }
+    let result = [];
+    let step = 0;
+    
+    for (let i = startIndex; i <= end; i++) {
+        result[step] = array[i];
+        step += 1;
+    }
+    return result;
+}
+
+console.log(arr);
+console.log(except(arr, [3]));
