@@ -156,7 +156,7 @@ console.log(except(arr, [3]));
 
 
 
-// task 6
+// task 6   +
 
 const arr = [1,10,2,3,4,6];
 
@@ -171,3 +171,35 @@ function getMax(numbers) {
 };
 
 console.log(getMax(arr));
+
+
+// task 7  +
+
+const movies = [
+    {title: "a", year: 2021, rating: 4.5},
+    {title: "c", year: 2020, rating: 3.7},
+    {title: "v", year: 2021, rating: 4.3},
+    {title: "g", year: 2019, rating: 4.0},
+    {title: "t", year: 2018, rating: 3.9},
+    {title: "y", year: 2018, rating: 5.0},
+    {title: "j", year: 2021, rating: 3.8},
+]
+
+
+function searchMovieByYear(year) {
+    let result = []; 
+    const movies2 = movies.find((movie) => {
+        if (movie.year === 2021) {
+            result.push(movie)
+        }
+    })
+
+    
+    result.sort(function(a,b) {
+    return a.rating - b.rating;
+    });
+
+    return result;
+}
+
+console.log(searchMovieByYear(2021));
