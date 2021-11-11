@@ -203,3 +203,22 @@ function searchMovieByYear(year) {
 }
 
 console.log(searchMovieByYear(2021));
+
+// task 8  +
+
+function sum(...args) {
+    let result = 0;
+    if (Array.isArray(args[0])) {
+        let arr = args[0];
+        for (let i of arr) {
+            result += i;
+        }
+    }else {
+        for (let elem of args) {
+            result += elem;
+        }
+    }
+    return result
+}
+
+console.log(sum(1,2,3));
