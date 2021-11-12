@@ -236,3 +236,32 @@ function sum(...args) {
 }
 
 console.log(sum(1,2,3));
+
+
+/* _______________________________________Array metod________________________________________________ */
+
+
+// unshift() metod
+
+const arr = [2, 1, 3];
+
+function unshift(arr, ...num) {
+    let newArr = [];
+
+    for (let i = 0; i < num.length; i++) {
+        newArr[i] = num[i]
+    }
+
+    let lenNewArray = newArr.length;
+
+    for (let i = 0; i < 3; i++) {
+        newArr[i + lenNewArray] = arr[i]
+    }
+
+    return newArr
+}
+
+let aass = unshift(arr, true, false)
+
+
+console.log(aass);
