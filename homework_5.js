@@ -156,18 +156,15 @@ console.log(except(arr, [3]));
 
 const arr = [1, 2, 3, 4]; 
 
-function move(arr, index, num1) {
+function exchangeElem(arr, index, num1) {
     let elem = 0;
-
-
     for (let i = index; i < num1; i++) {
         elem = arr[i];
         arr[i] = arr[i+1];
         arr[i+1] = elem;
     }
 }
-
-move(arr, 0, 2)
+exchangeElem(arr, 0, 2)
 console.log(arr);
 
 
