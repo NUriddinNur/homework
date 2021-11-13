@@ -52,7 +52,7 @@ const insertDashes = function(num) {
 }
 console.log(insertDashes(1234));
 
-// task 7.7  
+// task 7.7  +
 
 const sortFunction = function (arr2) {
     let a = 0;
@@ -71,5 +71,20 @@ const sortFunction = function (arr2) {
 let array = [2,4,3,5,1]
 console.log(sortFunction(array));
 
+// task 7.9   +
 
+function reverseWord(str) {
+    let resultStr = ""
+
+    for (let i of str) {
+        if (i === i.toUpperCase()) {
+            resultStr = resultStr + i.toLowerCase()
+        }else {
+            resultStr = resultStr + i.toUpperCase()
+        }
+    }
+    return resultStr;
+}
+
+console.log(reverseWord("SaloM AssaLom"));
 
