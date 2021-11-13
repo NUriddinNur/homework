@@ -88,3 +88,17 @@ function reverseWord(str) {
 
 console.log(reverseWord("SaloM AssaLom"));
 
+// task 7.10   +
+
+const nesArray = [[2, 3, 4, 2], [5, 4, 6, 33], [22, 33, 1, 8], [67, 87, 9, 0]]
+
+function getArray(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(`"Row" ${i}`);
+        for (let j = 0; j <  arr[i].length; j++) {
+            console.log(`"${arr[i][j]}"`)
+        }
+    }
+}
+
+console.log(getArray(nesArray));
