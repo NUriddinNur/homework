@@ -21,7 +21,7 @@ arr2[0] = 5
 // console.log(arr1, arr2);
 
 
-// task 7.5
+// task 7.5  + 
 
 const joinArrayElement = function(arr1) {
     let str = "";
@@ -33,3 +33,25 @@ const joinArrayElement = function(arr1) {
 const arr = ["Red", "Green", "Yellow"];
 
 console.log(joinArrayElement(arr));
+
+// task 7.6   +
+
+const insertDashes = function(num) {
+    let str = "" + num;
+    let arr = str.split("");
+    str = ""
+
+    for (let i = 0; i < arr.length; i++) {
+        if (i == arr.length - 1) {
+            str = str + arr[i];
+        }else {
+            str = str + arr[i] + "-";
+        }
+    }
+    return str
+}
+console.log(insertDashes(1234));
+
+
+
+
