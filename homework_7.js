@@ -52,6 +52,24 @@ const insertDashes = function(num) {
 }
 console.log(insertDashes(1234));
 
+// task 7.7  
+
+const sortFunction = function (arr2) {
+    let a = 0;
+
+    for (let i = 0; i < arr2.length; i++) {
+        for (let j = 0; j < i; j++) {
+            if (arr2[i] < arr2[j]) {
+                a = arr2[i];
+                arr2[i] = arr2[j];
+                arr2[j] = a;
+            }
+        }
+    }
+    return arr2
+}
+let array = [2,4,3,5,1]
+console.log(sortFunction(array));
 
 
 
