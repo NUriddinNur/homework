@@ -92,27 +92,9 @@ const countElemInArray = function (arr) {
     console.log(element, res);
 }
 
-const newArray = ["a", "a", "b", "b"]
+const newArray = ["a", "a", "b", 5, 6, 3, 4]
 
 countElemInArray(newArray)
-
-// for (let elem of newArray) {
-//     console.log(elem);
-//     let count = 0;
-//     element = map((value, index, arr) => {
-//         if (value === arr[index]) {
-//             count += 1;
-//         }
-//         return [elem, count];
-//     })
-// }
-
-// for (let elem of newArray) {
-//     result.push(newArray.filter(x => x === elem))
-// }
-
-// console.log(result);
-// console.log(newArray.filter(x => x === 2));
 
 
 // task 7.9   +
