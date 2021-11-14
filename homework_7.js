@@ -71,6 +71,50 @@ const sortFunction = function (arr2) {
 let array = [2,4,3,5,1]
 console.log(sortFunction(array));
 
+// task 7.8
+
+
+const countElemInArray = function (arr) {
+    let result = [];
+    let res = 0;
+    let element;
+
+    for (let elem of arr) {
+        result.push(arr.filter(x => x === elem))
+    }
+
+    for (let i of result) {
+        if (i.length > res) {
+            res = i.length;
+            element = i[0];
+        }
+    }
+    console.log(element, res);
+}
+
+const newArray = ["a", "a", "b", "b"]
+
+countElemInArray(newArray)
+
+// for (let elem of newArray) {
+//     console.log(elem);
+//     let count = 0;
+//     element = map((value, index, arr) => {
+//         if (value === arr[index]) {
+//             count += 1;
+//         }
+//         return [elem, count];
+//     })
+// }
+
+// for (let elem of newArray) {
+//     result.push(newArray.filter(x => x === elem))
+// }
+
+// console.log(result);
+// console.log(newArray.filter(x => x === 2));
+
+
 // task 7.9   +
 
 function reverseWord(str) {
@@ -86,7 +130,7 @@ function reverseWord(str) {
     return resultStr;
 }
 
-console.log(reverseWord("SaloM AssaLom"));
+// console.log(reverseWord("SaloM AssaLom"));
 
 // task 7.10   +
 
@@ -101,4 +145,4 @@ function getArray(arr) {
     }
 }
 
-console.log(getArray(nesArray));
+// console.log(getArray(nesArray));
